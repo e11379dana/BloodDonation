@@ -1,0 +1,41 @@
+<style>
+
+  html, body {
+        margin: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    body {
+        padding: 0 10%;
+    }
+
+    #main {
+        margin: 0 auto; /* in case you want to set a fixed width on this as well */
+    }
+    
+    #myCarousel {
+    	float:left;
+    	width:1080px;
+      	height:530px;
+    }
+    .carousel-inner > .item > img,
+  	.carousel-inner > .item > a > img {
+  
+     width:900px;
+     height:530px;
+     margin:auto;
+  }
+  #newsPanel {
+  	float:right;
+  	width:520px;
+  	height:440px;
+  	background-color: #F5DEB3;
+  	
+  }
+  #body {
+  	font-family: "Times New Roman", Times, serif;
+  	font-size: 15px;
+  }
+  
+  

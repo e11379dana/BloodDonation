@@ -1,0 +1,17 @@
+<style>
+
+  html, body {
+        margin: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    body {
+        padding: 0 15%;
+    }
+    #main {
+        margin: 0 auto; /* in case you want to set a fixed width on this as well */
+    }
+    #panelb {
+    	background-color:#F5DEB3;
+    }

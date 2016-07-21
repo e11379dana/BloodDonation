@@ -1,0 +1,25 @@
+<style>
+
+  html, body {
+        margin: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    body {
+        padding: 0 10%;
+    }
+
+    #main {
+        margin: 0 auto; /* in case you want to set a fixed width on this as well */
+    }
+    
+    #newsPanel {
+  		width:auto;
+  		height:auto;
+  		background-color: #F5DEB3;
+    }
+    #body {
+  	font-family: "Times New Roman", Times, serif;
+  	font-size: 15px;
+  }

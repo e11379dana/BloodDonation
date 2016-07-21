@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>DonateBlood</display-name>
+  <servlet>
+    <servlet-name>DbConnector</servlet-name>
+    <servlet-class>codes.servlets.DbConnector</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DbConnector</servlet-name>
+    <url-pattern>/DbConnectorService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>LoadIndex</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>more</servlet-name>
+    <servlet-class>MoreNews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>more</servlet-name>
+    <url-pattern>/more</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addPost</servlet-name>
+    <servlet-class>Add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addPost</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <servlet-name>SearchDonor</servlet-name>
+    <servlet-class>codes.servlets.SearchDonor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchDonor</servlet-name>
+    <url-pattern>/SearchDonorService</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+   <servlet-name>DonorUpdate</servlet-name>
+    <servlet-class>codes.servlets.UpdateDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonorUpdate</servlet-name>
+    <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ShowNews</servlet-name>
+    <servlet-class>codes.servlets.ShowEditePost</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowNews</servlet-name>
+    <url-pattern>/Show</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>Edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>readMore</servlet-name>
+    <servlet-class>ReadMore</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>readMore</servlet-name>
+    <url-pattern>/readMore</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateDetails</servlet-name>
+    <servlet-class>codes.servlets.UpdateDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateDetails</servlet-name>
+    <url-pattern>/UpdateDetailService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>home</servlet-name>
+    <servlet-class>Home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>home</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>home</welcome-file>
+  </welcome-file-list>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>admin</web-resource-name>
+      <url-pattern>/register.html</url-pattern>
+      <url-pattern>/success_logged.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/login.jsp</form-login-page>
+      <form-error-page>/login-failed.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+</web-app>
